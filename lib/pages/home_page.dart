@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void updateMapTheme(GoogleMapController controller) {
-    getJsonFileFromThemes("themes/dark_style.json").then((value) => setGoogleMapStyle(value, controller));
+    getJsonFileFromThemes("themes/retro_style.json").then((value) => setGoogleMapStyle(value, controller));
   }
 
   Future<String> getJsonFileFromThemes(String mapStylePath) async {

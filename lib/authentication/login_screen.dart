@@ -145,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         checkIfNetworkIsAvailable();
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.purple,
+                        backgroundColor: Colors.blue,
                         padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
 
                       ),
