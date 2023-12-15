@@ -1,9 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:math';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_geofire/flutter_geofire.dart';
@@ -420,7 +419,7 @@ class _HomePageState extends State<HomePage> {
         nameDriver = (eventSnapshot.snapshot.value as Map)["driverName"];
       }
       if((eventSnapshot.snapshot.value as Map)["driverPhone"] != null) {
-        phoneNumberDriver = nameDriver = (eventSnapshot.snapshot.value as Map)["driverPhone"];
+        phoneNumberDriver = (eventSnapshot.snapshot.value as Map)["driverPhone"];
       }
       if((eventSnapshot.snapshot.value as Map)["driverPhoto"] != null) {
         photoDriver = (eventSnapshot.snapshot.value as Map)["driverPhoto"];
